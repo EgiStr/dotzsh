@@ -21,9 +21,9 @@ Script ini akan menghapus konfigurasi Zsh yang sudah ada, mengunduh dan menginst
 
 ## Instalasi tanpa git
 
-    ```bash
+```bash
     curl -sL https://raw.githubusercontent.com/EgiStr/dotzsh/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh && zsh
-    ```
+```
 ## Catatan
 
 - Script ini hanya diuji pada Ubuntu 
