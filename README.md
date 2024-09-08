@@ -1,36 +1,36 @@
-Ini adalah script untuk mengkonfigurasi Zsh dengan Oh My Zsh dan tema Powerlevel10k.
-Ini adalah script yang saya gunakan untuk mengkonfigurasi terminal saya. 
-Script ini akan menghapus konfigurasi Zsh yang sudah ada, mengunduh dan menginstal Oh My Zsh dan tema Powerlevel10k, mengganti tema Zsh dengan Powerlevel10k, mengganti font terminal dengan `MesloLGS NF`, dan mengganti tema terminal dengan `Dracula`.
+# Pengenalan
+This is the script I use to configure my terminal.
 
-## Daftar Isi
-- [Prasyarat](#prasyarat)
-- [Cara Menggunakan Script Ini](#cara-menggunakan-script-ini)
-- [Instalasi tanpa git](#instalasi-tanpa-git)
-- [Catatan](#catatan)
+# Configure Zsh with Oh My Zsh and Powerlevel10k theme
+This is a script to configure Zsh with Oh My Zsh and the Powerlevel10k theme.
+This script will remove existing Zsh configurations, download and install Oh My Zsh and the Powerlevel10k theme, change the Zsh theme to Powerlevel10k, change the terminal font to `MesloLGS NF`, and change the terminal theme to `Dracula`.
 
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [How to Use This Script](#how-to-use-this-script)
+- [Installation without git](#installation-without-git)
+- [Notes](#notes)
 
-
-## Prasyarat
+## Prerequisites
 - curl
 
-## Cara Menggunakan Script Ini
+## How to Use This Script
 
-1. Simpan script ini ke dalam sebuah file, misalnya, `setup.sh`.
-2. Beri hak eksekusi dengan `chmod +x setup.sh`.
-3. Jalankan script dengan `./setup.sh`.
+1. Save this script to a file, for example, `setup.sh`.
+2. Make it executable with `chmod +x setup.sh`.
+3. Run the script with `./setup.sh`.
 
-## Instalasi tanpa git
+## Installation without git
 
 ```bash
     curl -sL https://raw.githubusercontent.com/EgiStr/dotzsh/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh && zsh
 ```
-## Catatan
+## Notes
 
-- Script ini hanya diuji pada Ubuntu 
-- Script ini akan menghapus konfigurasi Zsh yang sudah ada.
-- Script ini akan mengunduh dan menginstal Oh My Zsh dan tema Powerlevel10k.
-- Script ini akan mengganti tema Zsh dengan Powerlevel10k.
-- Script ini akan mengganti font terminal dengan `MesloLGS NF`.
-- Script ini akan mengganti tema terminal dengan `Dracula`.
+- This script has only been tested on Ubuntu.
+- This script will remove existing Zsh configurations.
+- This script will download and install Oh My Zsh and the Powerlevel10k theme.
+- This script will change the Zsh theme to Powerlevel10k.
+- This script will change the terminal font to `MesloLGS NF`.
+- This script will change the terminal theme to `Dracula`.
 
-# dotzsh
