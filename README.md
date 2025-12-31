@@ -22,7 +22,7 @@ To reproduce this configuration on a new machine:
 
 1.  Clone this repository:
     ```bash
-    git clone https://github.com/yourusername/dotzsh.git
+    git clone https://github.com/EgiStr/dotzsh.git
     cd dotzsh
     ```
 
