@@ -1,0 +1,56 @@
+# Starship configuration
+# https://starship.rs/config/
+
+[character]
+success_symbol = "[❯](green)"
+error_symbol = "[❯](red)"
+
+[git_branch]
+symbol = " "
+
+[git_status]
+conflicted = "≠"
+ahead = "⇡"
+behind = "⇣"
+diverged = "⇕"
+untracked = "?"
+stashed = "$"
+modified = "!"
+staged = '[+\($count\)](green)'
+renamed = "»"
+deleted = "✘"
+
+[cmd_duration]
+min_time = 500
+
+[time]
+disabled = false
+format = "🕙 [$time](white)"
+
+[username]
+show_always = false
+
+[hostname]
+ssh_only = true
+
+[directory]
+truncation_length = 3
+truncation_symbol = "…/"
+
+[package]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[python]
+disabled = true
+
+[rust]
+disabled = true
+
+[java]
+disabled = true
+
+[php]
+disabled = true

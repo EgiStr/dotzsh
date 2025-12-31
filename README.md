@@ -1,36 +1,61 @@
-# Pengenalan
-This is the script I use to configure my terminal.
+# Dotfiles Configuration
 
-# Configure Zsh with Oh My Zsh and Powerlevel10k theme
-This is a script to configure Zsh with Oh My Zsh and the Powerlevel10k theme.
-This script will remove existing Zsh configurations, download and install Oh My Zsh and the Powerlevel10k theme, change the Zsh theme to Powerlevel10k, change the terminal font to `MesloLGS NF`, and change the terminal theme to `Dracula`.
+This repository contains my personal Linux terminal configuration, structured for easy reproduction and management.
 
-## Table of Contents
-- [Prerequisites](#prerequisites)
-- [How to Use This Script](#how-to-use-this-script)
-- [Installation without git](#installation-without-git)
-- [Notes](#notes)
+## Structure
+
+- **zsh/**: Contains Zsh configuration files.
+  - `.zshrc`: Main Zsh configuration file.
+  - `env`: Environment variables and PATH configuration (linked to `~/.local/bin/env`).
+- **starship/**: Contains Starship prompt configuration.
+  - `starship.toml`: Custom Starship configuration.
+- **setup.sh**: Automated setup script to install dependencies and link configurations.
 
 ## Prerequisites
-- curl
 
-## How to Use This Script
+- Ubuntu/Debian-based Linux distribution (script uses `apt`).
+- `curl`, `git` (installed by script if missing).
 
-1. Save this script to a file, for example, `setup.sh`.
-2. Make it executable with `chmod +x setup.sh`.
-3. Run the script with `./setup.sh`.
+## Installation
 
-## Installation without git
+To reproduce this configuration on a new machine:
 
-```bash
-    curl -sL https://raw.githubusercontent.com/EgiStr/dotzsh/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh && zsh
-```
-## Notes
+1.  Clone this repository:
+    ```bash
+    git clone https://github.com/yourusername/dotzsh.git
+    cd dotzsh
+    ```
 
-- This script has only been tested on Ubuntu.
-- This script will remove existing Zsh configurations.
-- This script will download and install Oh My Zsh and the Powerlevel10k theme.
-- This script will change the Zsh theme to Powerlevel10k.
-- This script will change the terminal font to `MesloLGS NF`.
-- This script will change the terminal theme to `Dracula`.
+2.  Run the setup script:
+    ```bash
+    chmod +x setup.sh
+    ./setup.sh
+    ```
+
+3.  Restart your terminal or log out and log back in.
+
+## Features
+
+- **Shell**: Zsh
+- **Prompt**: Starship
+- **Plugins**:
+  - `zsh-autosuggestions`
+  - `zsh-syntax-highlighting`
+- **Tools**:
+  - `zoxide` (smarter cd)
+  - `eza` (modern ls)
+  - `bat` (modern cat)
+  - `btop` (modern top)
+  - `fzf` (fuzzy finder)
+- **Version Managers**:
+  - `pyenv` (Python)
+  - `nvm` (Node.js)
+
+## Manual Management
+
+The configuration files are symlinked to their respective locations in the home directory. Any changes made to the files in this repository will be reflected immediately.
+
+- `~/.zshrc` -> `./zsh/.zshrc`
+- `~/.local/bin/env` -> `./zsh/env`
+- `~/.config/starship.toml` -> `./starship/starship.toml`
 
